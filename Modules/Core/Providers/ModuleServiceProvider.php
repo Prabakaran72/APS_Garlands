@@ -15,7 +15,7 @@ class ModuleServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        foreach ($this->app['modules']->allEnabled() as $module) {
+        foreach ($this->app['modules']->allEnabled() as $module) {      
             $this->loadViews($module);
             $this->loadTranslations($module);
             $this->loadConfigs($module);

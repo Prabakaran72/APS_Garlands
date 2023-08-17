@@ -132,7 +132,6 @@ class SentinelAuthentication implements Authentication
         }
 
         $permissions = is_array($permissions) ? $permissions : func_get_args();
-
         return Sentinel::hasAccess($permissions);
     }
 

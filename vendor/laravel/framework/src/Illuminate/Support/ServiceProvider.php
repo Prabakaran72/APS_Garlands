@@ -162,6 +162,7 @@ abstract class ServiceProvider
      */
     protected function loadViewsFrom($path, $namespace)
     {
+
         $this->callAfterResolving('view', function ($view) use ($path, $namespace) {
             if (isset($this->app->config['view']['paths']) &&
                 is_array($this->app->config['view']['paths'])) {
@@ -173,6 +174,7 @@ abstract class ServiceProvider
             }
 
             $view->addNamespace($namespace, $path);
+            
         });
     }
 

@@ -228,6 +228,7 @@ abstract class FileRepository implements RepositoryInterface, Countable
 
         /** @var Module $module */
         foreach ($this->all() as $name => $module) {
+          
             if ($module->isStatus($status)) {
                 $modules[$name] = $module;
             }

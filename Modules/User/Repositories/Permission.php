@@ -79,7 +79,7 @@ class Permission
 
     /**
      * Get the permission value.
-     *
+     *g
      * @param $permission
      * @return bool|null
      */

@@ -37,7 +37,7 @@ class RouteServiceProvider extends ServiceProvider
         }
     }
 
-    /**
+    /**,  ,
      * Map routes from active theme.
      *
      * @return void
